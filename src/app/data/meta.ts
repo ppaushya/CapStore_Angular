@@ -19,6 +19,9 @@ export interface Product {
     // productsold:number;
     // productView:number;
     // isPromotionmsgSent:boolean;
+
+
+    //dummycheck
 }
 
 export interface ProductPhoto {
