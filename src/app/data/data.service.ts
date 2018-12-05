@@ -5,13 +5,13 @@ import { Product } from './meta';
 export class DataService {
   products: Product[] = [
     {
-      id: 1,
-      title: 'Roxy Women\'s Jetty Block Snow Jacket',
-      description: 'The Roxy Women\'s Jetty Block Snow Jacket combines a great look with alpine performance!',
+      productId: 1,
+      productName: 'Roxy Women\'s Jetty Block Snow Jacket',
+      productDescription: 'The Roxy Women\'s Jetty Block Snow Jacket combines a great look with alpine performance!',
       picture: '/assets/p1-1.jpg',
-      price: 170,
-      sale: 145,
-      photos: [
+      productPrice: 170,
+      discountedPrice: 145,
+      productImage: [
         {
           thumb: '/assets/p1-1.jpg',
           full: '/assets/p1-1.jpg',
@@ -35,13 +35,13 @@ export class DataService {
       ],
     },
     {
-      id: 2,
-      title: 'Spyder Women\'s Willow Snow Jacket',
-      description: 'The Spyder Women\'s Willow Snow Jacket has a long, lean silhouette and athletic fit!',
+      productId: 2,
+      productName: 'Spyder Women\'s Willow Snow Jacket',
+      productDescription: 'The Spyder Women\'s Willow Snow Jacket has a long, lean silhouette and athletic fit!',
       picture: '/assets/p2-1.jpg',
-      price: 400,
-      sale: 350,
-      photos: [
+      productPrice: 400,
+      discountedPrice: 350,
+      productImage: [
         {
           thumb: '/assets/p2-1.jpg',
           full: '/assets/p2-1.jpg',
@@ -55,13 +55,13 @@ export class DataService {
       ],
     },
     {
-      id: 3,
-      title: 'Women\'s Autumn Insulated Snowboard Jacket',
-      description: 'The Jacket is tailored to fit your needs.',
+      productId: 3,
+      productName: 'Women\'s Autumn Insulated Snowboard Jacket',
+      productDescription: 'The Jacket is tailored to fit your needs.',
       picture: '/assets/p3-1.jpg',
-      price: 90,
-      sale: 68,
-      photos: [
+      productPrice: 90,
+      discountedPrice: 68,
+      productImage: [
         {
           thumb: '/assets/p3-1.jpg',
           full: '/assets/p3-1.jpg',
@@ -75,13 +75,13 @@ export class DataService {
       ],
     },
     {
-      id: 4,
-      title: 'Burton Women\'s Expedition 1/4 Zip Base Layer Top',
-      description: 'Built-in Stretch 360° for rider-friendly mobility, and zip-venting to regulate active body temps.',
+      productId: 4,
+      productName: 'Burton Women\'s Expedition 1/4 Zip Base Layer Top',
+      productDescription: 'Built-in Stretch 360° for rider-friendly mobility, and zip-venting to regulate active body temps.',
       picture: '/assets/p4-1.jpg',
-      price: 79,
-      sale: 55,
-      photos: [
+      productPrice: 79,
+      discountedPrice:50,
+      productImage: [
         {
           thumb: '/assets/p4-1.jpg',
           full: '/assets/p4-1.jpg',
@@ -95,13 +95,13 @@ export class DataService {
       ],
     },
     {
-      id: 5,
-      title: 'Nils Women\'s Lucy Print Leggings',
-      description: 'The are heavyweight, fleece backed, body hugging baselayer that will move with you down the slopes. ',
+      productId: 5,
+      productName: 'Nils Women\'s Lucy Print Leggings',
+      productDescription: 'The are heavyweight, fleece backed, body hugging baselayer that will move with you down the slopes. ',
       picture: '/assets/p5-1.jpg',
-      price: 125,
-      sale: 109,
-      photos: [
+      productPrice: 125,
+      discountedPrice: 109,
+      productImage: [
         {
           thumb: '/assets/p5-1.jpg',
           full: '/assets/p5-1.jpg',
@@ -115,13 +115,13 @@ export class DataService {
       ],
     },
     {
-      id: 6,
-      title: 'Burton Women\'s Starr Vest',
-      description: 'Is the epitome of comfort and versatility thanks to a sweater fleece fabric.',
+      productId: 6,
+      productName: 'Burton Women\'s Starr Vest',
+      productDescription: 'Is the epitome of comfort and versatility thanks to a sweater fleece fabric.',
       picture: '/assets/p6-1.jpg',
-      price: 75,
-      sale: 60,
-      photos: [
+      productPrice: 75,
+      discountedPrice: 60,
+      productImage: [
         {
           thumb: '/assets/p6-1.jpg',
           full: '/assets/p6-1.jpg',
@@ -145,13 +145,13 @@ export class DataService {
       ],
     },
     {
-      id: 7,
-      title: 'Dylan by True Grit Women\'s Flannel & Sherpa Road Trip Vest',
-      description: 'Is a nice piece to cap of your fall or winter wardrobe.',
+      productId: 7,
+      productName: 'Dylan by True Grit Women\'s Flannel & Sherpa Road Trip Vest',
+      productDescription: 'Is a nice piece to cap of your fall or winter wardrobe.',
       picture: '/assets/p7-1.jpg',
-      price: 124,
-      sale: 90,
-      photos: [
+      productPrice: 124,
+      discountedPrice: 90,
+      productImage: [
         {
           thumb: '/assets/p7-1.jpg',
           full: '/assets/p7-1.jpg',
@@ -170,13 +170,13 @@ export class DataService {
       ],
     },
     {
-      id: 8,
-      title: 'O\'Neill Exalt Ski Pants',
-      description: 'For the technical side they have 10K/10K waterproofing & breathability and O\'Neill Hyperdry to keep you warm and dry.',
+      productId: 8,
+      productName: 'O\'Neill Exalt Ski Pants',
+      productDescription: 'For the technical side they have 10K/10K waterproofing & breathability and O\'Neill Hyperdry to keep you warm and dry.',
       picture: '/assets/p8-1.jpg',
-      price: 140,
-      sale: 135,
-      photos: [
+      productPrice: 140,
+      discountedPrice: 135,
+      productImage: [
         {
           thumb: '/assets/p8-1.jpg',
           full: '/assets/p8-1.jpg',
@@ -195,13 +195,13 @@ export class DataService {
       ],
     },
     {
-      id: 9,
-      title: 'Strafe Outerwear Capital Snow Pants',
-      description: 'Will repel any type of weather you encounter during your mountain adventure',
+      productId: 9,
+      productName: 'Strafe Outerwear Capital Snow Pants',
+      productDescription: 'Will repel any type of weather you encounter during your mountain adventure',
       picture: '/assets/p9-1.jpg',
-      price: 350,
-      sale: 339,
-      photos: [
+      productPrice: 350,
+      discountedPrice: 339,
+      productImage: [
         {
           thumb: '/assets/p9-1.jpg',
           full: '/assets/p9-1.jpg',

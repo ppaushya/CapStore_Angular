@@ -1,11 +1,24 @@
 export interface Product {
-  id: number;
-  title: string;
-  description: string;
+ 
+  productId: number;
+  productName: string;
+  productDescription: string;
   picture: string;
-  price: number;
-  sale: number;
-  photos: ProductPhoto[];
+  productPrice: number;
+  discountedPrice:number;
+  productImage: ProductPhoto[];
+
+    // quantity:number;
+    // // productId:number;
+    // productName:string;
+    // productCategory:string;
+    // inventoryId:number;
+    // productPrice:string;
+    // merchantId:number;
+    // promoId:number;
+    // productsold:number;
+    // productView:number;
+    // isPromotionmsgSent:boolean;
 }
 
 export interface ProductPhoto {

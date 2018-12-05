@@ -3,8 +3,9 @@ import { ActivatedRoute } from '@angular/router';
 import { DataService } from '../../data/data.service';
 import { Product } from '../../data/meta';
 
+
 @Component({
-  selector: 'app-view-page',
+  selector: 'app-view-page', 
   templateUrl: './view-page.component.html',
   styleUrls: ['./view-page.component.scss'],
 })
@@ -14,7 +15,7 @@ export class ViewPageComponent implements OnInit {
   size: any;
 
   product: Product;
-
+  // products: Products;
   recent: Product[];
 
   constructor(private data: DataService,
@@ -23,8 +24,13 @@ export class ViewPageComponent implements OnInit {
 
   ngOnInit() {
     this.route.params.subscribe(params => {
-      this.product = this.data.products.find(p => p.id === parseInt(params.id, 10));
+      this.product = this.data.products.find(p => p.productId === parseInt(params.id, 10));
       this.recent = this.data.products.slice(0, 4);
     });
+
+  }
+
+  getProducts(productId:Number){
+
   }
 }

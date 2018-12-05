@@ -13,6 +13,7 @@ import { HeaderModule } from './header/header.module';
 import { UiModule } from './ui/ui.module';
 import { SliderModule } from 'angular-image-slider';
 import { TrackComponent } from './track/track.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 export function hammerConfigFactory() {
@@ -35,7 +36,8 @@ export function hammerConfigFactory() {
     UiModule,
     HeaderModule,
     FooterModule,
-    SliderModule
+    SliderModule,
+    HttpClientModule
    
   ],
   declarations: [
