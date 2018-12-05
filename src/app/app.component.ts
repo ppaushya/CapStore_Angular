@@ -33,7 +33,11 @@ export class AppComponent {
       },
     ]);
     // scroll to top
+<<<<<<< HEAD
     //scroll3
+=======
+    //Scroll2
+>>>>>>> master
     this.router.events.subscribe(event => {
       if (this.platform.isBrowser() && event instanceof NavigationEnd) {
         window.scrollTo(0, 0);
