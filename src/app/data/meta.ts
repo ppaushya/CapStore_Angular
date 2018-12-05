@@ -22,6 +22,7 @@ export interface Product {
 
 
     //dummycheck
+    //dummycheck2
 }
 
 export interface ProductPhoto {
