@@ -1,18 +1,26 @@
 <div class="main-wrapper">
   <div class="login-panel">
-    <h2 class="title">About You</h2>
+    <h2 class="title">SignUp</h2>
     <form>
       <div>
-        <label>Full Name:</label>
-        <input [uiInput] name="full-name" [(ngModel)]="inputModel">
+        <label>First Name:</label>
+        <input [uiInput] name="first-name" [(ngModel)]="customer.firstName">
+      </div>
+      <div>
+        <label>Last Name:</label>
+        <input [uiInput] name="last-name" [(ngModel)]="customer.lastName">
       </div>
       <div>
         <label>Email address</label>
-        <input [uiInput] name="email" [(ngModel)]="inputModel">
+        <input [uiInput] name="email" [(ngModel)]="customer.emailId">
       </div>
       <div>
-        <label>Confirm Email:</label>
-        <input [uiInput] name="confirm-email" [(ngModel)]="inputModel">
+        <label>Mobile No.:</label>
+        <input [uiInput] name="mobile" [(ngModel)]="customer.mobileNumber">
+      </div>
+      <div>
+        <label>Address:</label>
+        <input [uiInput] name="mobile" [(ngModel)]="customer.mobileNumber">
       </div>
       <div>
         <label>Password:</label>
@@ -29,6 +37,11 @@
     <div class="policy">
       <p>
         By proceeding, you are confirming that you agree to our Terms and Conditions and Privacy Policy.
+      </p>
+    </div>
+    <div>
+      <p>
+        Already have  an account?Go to <a routerLink="../sign-in">Login page</a>
       </p>
     </div>
   </div>
